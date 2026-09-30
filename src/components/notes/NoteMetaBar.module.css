@@ -1,0 +1,79 @@
+.metaBar {
+  border-top: 1px solid var(--border-subtle);
+  padding: var(--space-3) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.tag {
+  background: var(--surface-hover);
+  color: var(--text-secondary);
+  font: var(--text-label);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.removeTag {
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+}
+
+.removeTag:hover {
+  color: var(--text-primary);
+  background: var(--surface-overlay);
+}
+
+.addTagBtn {
+  background: transparent;
+  border: 1px dashed var(--border-subtle);
+  color: var(--text-tertiary);
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addTagBtn:hover {
+  border-color: var(--border-default);
+  color: var(--text-secondary);
+}
+
+.tagInput {
+  font: var(--text-label);
+  padding: 2px 8px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  background: var(--surface-base);
+  color: var(--text-primary);
+  outline: none;
+  width: 80px;
+}
+
+.tagInput:focus {
+  border-color: var(--accent-primary);
+}
+
+.updatedAt {
+  font: var(--text-label-sm);
+  color: var(--text-tertiary);
+}

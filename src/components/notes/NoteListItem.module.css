@@ -1,0 +1,75 @@
+.noteItem {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+  cursor: pointer;
+  position: relative;
+  transition: background var(--transition-fast);
+  border-left: 3px solid transparent;
+}
+
+.noteItem:hover {
+  background: var(--surface-hover);
+}
+
+.noteItem.active {
+  background: var(--surface-hover);
+  border-left-color: var(--accent-primary);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-1);
+}
+
+.title {
+  font: var(--text-heading-sm);
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.untitled {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  padding: var(--space-1);
+  border-radius: var(--radius-default);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteButton:hover {
+  color: var(--error);
+  background: var(--surface-overlay);
+}
+
+.noteItem:hover .deleteButton {
+  opacity: 1;
+}
+
+.preview {
+  font: var(--text-body-sm);
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: var(--space-2);
+}
+
+.footer {
+  font: var(--text-label-sm);
+  color: var(--text-tertiary);
+}

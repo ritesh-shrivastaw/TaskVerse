@@ -1,0 +1,39 @@
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: var(--space-5) var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .editor {
+    padding: var(--space-4);
+  }
+}
+
+.content {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: transparent;
+  resize: none;
+  font: var(--text-body);
+  color: var(--text-primary);
+  line-height: 1.6;
+  outline: none;
+  margin-bottom: var(--space-4);
+}
+
+.titleInput {
+  font: var(--text-display);
+  border: none;
+  background: transparent;
+  width: 100%;
+  color: var(--text-primary);
+  outline: none;
+  margin-bottom: var(--space-4);
+}
+
+.titleInput::placeholder {
+  color: var(--text-secondary);
+}

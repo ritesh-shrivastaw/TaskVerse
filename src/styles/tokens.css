@@ -1,0 +1,91 @@
+/* ========================================================
+   TaskVerse Notes Design Tokens
+   Generated from Stitch Design System: "TaskVerse Slate"
+   ======================================================== */
+
+:root {
+  /* ── Fonts ── */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace;
+
+  /* ── Typography Scale ── */
+  --text-display: 700 28px/1.2 var(--font-sans);
+  --text-heading-lg: 600 22px/1.3 var(--font-sans);
+  --text-heading-md: 600 18px/1.3 var(--font-sans);
+  --text-body: 400 15px/1.6 var(--font-sans);
+  --text-body-sm: 400 13px/1.5 var(--font-sans);
+  --text-label: 500 12px/1.0 var(--font-mono);
+  --text-label-sm: 500 11px/1.0 var(--font-mono);
+
+  --letter-spacing-label: 0.04em;
+  --letter-spacing-label-sm: 0.06em;
+
+  /* ── Spacing (8px base) ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-8: 48px;
+  --space-10: 64px;
+
+  /* ── Radius ── */
+  --radius-sm: 4px;
+  --radius-default: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* ── Motion ── */
+  --transition-fast: 150ms ease;
+  --transition-default: 200ms ease;
+
+  /* ── Sidebar ── */
+  --sidebar-width: 300px;
+
+  /* ── Accents (shared across themes) ── */
+  --accent-primary: #E4A853;
+  --accent-primary-dim: #C48D3A;
+  --accent-secondary: #6B9E7D;
+  --accent-secondary-dim: #568166;
+  --accent-tertiary: #5B8FC9;
+  --error: #D9534F;
+  --error-dim: #B33A36;
+}
+
+/* ── Dark Theme (default) ── */
+[data-theme="dark"], :root {
+  --surface-base: #0F1219;
+  --surface-raised: #171C26;
+  --surface-overlay: #1E2430;
+  --surface-hover: #252B38;
+  --border-subtle: #2A3140;
+  --border-default: #3A4254;
+  --text-primary: #E8ECF2;
+  --text-secondary: #9CA3B4;
+  --text-tertiary: #6B7280;
+  color-scheme: dark;
+}
+
+/* ── Light Theme ── */
+[data-theme="light"] {
+  --surface-base: #F8F9FB;
+  --surface-raised: #FFFFFF;
+  --surface-overlay: #FFFFFF;
+  --surface-hover: #F0F2F5;
+  --border-subtle: #E5E8ED;
+  --border-default: #CDD2DA;
+  --text-primary: #1A1F2B;
+  --text-secondary: #5A6270;
+  --text-tertiary: #8E95A2;
+  color-scheme: light;
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
