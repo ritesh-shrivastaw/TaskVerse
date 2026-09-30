@@ -130,7 +130,8 @@ button.alt:hover:not(:disabled) { background: var(--paper-deep); }
 #pager { display: flex; justify-content: space-between; gap: 18px; }
 #pager a, .privacy-link { color: var(--pine); font-size: 12px; font-weight: 600; text-decoration: none; }
 #pager a:hover, .privacy-link:hover { text-decoration: underline; text-underline-offset: 3px; }
-.site-footer p { grid-column: 1; grid-row: 2; margin: 0; color: var(--muted); font-size: 11px; }
+.site-footer p { display: flex; grid-column: 1; grid-row: 2; align-items: center; justify-content: space-between; gap: 8px 24px; flex-wrap: wrap; margin: 0; color: var(--muted); font-size: 11px; }
+.creator-credit { color: var(--ink-soft); font-weight: 600; }
 .privacy-link { grid-column: 2; grid-row: 1 / span 2; }
 .privacy-page { max-width: 760px; padding-top: 62px; }
 .privacy-page > h1 { margin: 13px 0 8px; font: 500 clamp(42px, 6vw, 64px)/1.05 var(--serif); letter-spacing: 0; }
